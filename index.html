@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <header>What's the weather?</header>
+        <form class="search-city">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            aria-label="Search"
+            width="50"
+            id="search-city"
+          />
+          <button>Submit</button>
+          <button id="current">Current</button>
+        </form>
+        <section class="row">
+          <h1 id="city">Amsterdam</h1>
+          <ul>
+            <li id="day"></li>
+            <li>Partly cloudy</li>
+          </ul>
+          <div class="temperature-container">
+            <div class="actual-temperature">
+              <span class="temperature" id="temperature"
+                >18°<smaller>C</smaller></span
+              >
+            </div>
+            <div class="specifications">
+              <ul>
+                <li>Humidity: 60%</li>
+                <li>Feels like: 17°C</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
